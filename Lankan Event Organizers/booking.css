@@ -1,0 +1,218 @@
+﻿/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f9ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #2a4d9b, #3c6df0);
+    padding: 20px 60px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+    .navbar .logo {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+        .navbar .logo span {
+            color: #ffdd57;
+        }
+
+    .navbar .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 35px;
+    }
+
+        .navbar .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+            .navbar .nav-links li a::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                height: 2px;
+                width: 0%;
+                background-color: #ffdd57;
+                transition: width 0.3s ease-in-out;
+            }
+
+            .navbar .nav-links li a:hover {
+                color: #ffdd57;
+                transform: translateY(-2px);
+            }
+
+                .navbar .nav-links li a:hover::after {
+                    width: 100%;
+                }
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    table th,
+    table td {
+        padding: 12px 15px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    table th {
+        background-color: #0b5394;
+        color: white;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    table tr:hover {
+        background-color: #e9f5ff;
+    }
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: #0b5394;
+}
+
+p {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 20px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 80px;
+}
+
+.contact-info, .newsletter-signup {
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+}
+
+    .contact-info h3,
+    .newsletter-signup h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #f9c846;
+    }
+
+    .contact-info p,
+    .newsletter-signup p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .contact-info a {
+        color: #f9c846;
+        text-decoration: none;
+    }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+    .newsletter-signup input[type="email"] {
+        padding: 10px;
+        width: 70%;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+    }
+
+    .newsletter-signup button {
+        padding: 10px 15px;
+        background: #f9c846;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        color: #000;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+        .newsletter-signup button:hover {
+            background: #e0ae00;
+        }
+
+.footer-copy {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.social-icons-vertical {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9c846;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+    .social-icon:hover {
+        transform: scale(1.2) rotate(10deg);
+        background-color: #fff;
+        color: #f9c846;
+    }

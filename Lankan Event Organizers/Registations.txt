@@ -1,0 +1,14 @@
+ADMIN
+arshadmahroof267@gmail.com - arshad13
+
+
+USER
+user1@gmail.com - useruser1
+user2@gmail.com - useruser2
+
+
+
+SERVICE PROVIDER
+provider1@gmail.com - provider1
+provider2@gmail.com - provider2
+provider3@gmail.com - provider3
